@@ -328,7 +328,7 @@ nav .right a span {
   /* SECTION 3: Skills */
 
   .skills-section{
-    margin-bottom: 900px;
+    margin-bottom: 2700px;
   }
   
   .skills-container {
@@ -360,35 +360,16 @@ nav .right a span {
     text-align: center; /* Center the text */
   }
 
-  /* SECTION 4: Publications */
+  /* Section 4: Publications */
   .publications-section {
-    padding: 40px 20px; /* Add more padding on top and sides to separate sections */
-    margin-bottom: 1500px; /* Ensure space below the publications section */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 50px; 
+    margin-top: 1000px; /* Space after the previous section */
+    width: 100%;
   }
 
-  .publications-section h2 {
-    font-size: 36px; /* Adjust font size */
-    text-align: center; /* Center the heading */
-    margin-bottom: 20px; /* Add some space under the heading */
-  }
-
-  .publications-section .publication-item {
-    width: 100%; /* Make each publication item take full width */
-    margin-bottom: 15px; /* Add space between publication items */
-    text-align: center; /* Center the content */
-  }
-
-  .publication-item h3 {
-    font-size: 20px; /* Adjust heading font size */
-  }
-
-  .publication-item p {
-    font-size: 16px; /* Adjust paragraph font size */
-  }
-
-  /* SECTION 4.1: Thesis Promo */
-/* SECTION 4.1: Thesis Promo - Mobile View */
-@media (max-width: 850px) {
   .thesis {
     flex-direction: column; /* Stack image and text */
     align-items: center;
@@ -485,18 +466,6 @@ nav .right a span {
     box-sizing: border-box;
   }
 
-  /* Section 4: Publications */
-.publications-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0 50px; 
-  margin-top: 300px; /* Space after the previous section */
-  width: 100%;
-}
-
-}
-
 @media (max-width: 600px) {
   /* NAVBAR */
   nav {
@@ -545,15 +514,6 @@ nav .right a span {
     font-size: 16px; /* Smaller text for paragraphs */
   }
 
-  /* Section 4: Publications */
-.publications-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0 50px; 
-  margin-top: 400px; /* Space after the previous section */
-  width: 100%;
-}
 
 }
 }
