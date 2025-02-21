@@ -326,6 +326,11 @@ nav .right a span {
   }
 
   /* SECTION 3: Skills */
+
+  .skills-section{
+    margin-bottom: 600px;
+  }
+  
   .skills-container {
     display: flex;
     flex-direction: column; /* Stack the skills items vertically */
@@ -346,7 +351,8 @@ nav .right a span {
   }
 
   .skills-item h3 {
-    font-size: 22px; /* Adjust title font size */
+    font-size: 20px; /* Adjust title font size */
+    text-align: center;
   }
 
   .skills-item p {
