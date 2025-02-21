@@ -479,6 +479,16 @@ nav .right a span {
     box-sizing: border-box;
   }
 
+  /* Section 4: Publications */
+.publications-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 50px; 
+  margin-top: 300px; /* Space after the previous section */
+  width: 100%;
+}
+
 }
 
 @media (max-width: 600px) {
@@ -529,4 +539,15 @@ nav .right a span {
     font-size: 16px; /* Smaller text for paragraphs */
   }
 
+  /* Section 4: Publications */
+.publications-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 50px; 
+  margin-top: 400px; /* Space after the previous section */
+  width: 100%;
+}
+
+}
 }
