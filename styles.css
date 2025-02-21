@@ -1,0 +1,532 @@
+:root {
+  --text-color: #1a1c20;
+  --subtitle-color:#267475;
+  --link-color: #267475;
+  --background-color: #ffffff;
+}
+
+/* Global reset for margin, padding, and box-sizing to avoid inconsistencies across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling behavior when navigating through anchors */
+html {
+  scroll-padding-top: 80px; /* Adjust this value based on your navbar height */
+}
+/* Body styling: Background, text color, and max-width for layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Link styling */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex; /* Flexbox layout for navbar items */
+  justify-content: space-between; /* Space between navbar items */
+  align-items: center; /* Vertically center navbar items */
+  padding: 0 50px;
+  height: 80px;
+}
+
+/* Styling for links in the navbar on the left */
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Styling for links in the navbar on the right */
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+/* Styling for the last link on the right (button-style) */
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/* Styling for span within links in navbar */
+nav .right a span {
+  margin-left: 5px;
+}
+
+/* SECTION 1: Hero */
+.hero-section {
+  display: flex; /* Flexbox for the hero section */
+  justify-content: space-between; /* Space between text and image */
+  align-items: center; /* Center vertically */
+  height: calc(100vh - 80px); /* Full height minus navbar */
+  padding: 0 50px;
+  gap: 40px; /* Space between text and image */
+}
+
+.hero-section .text {
+  flex: 5; /* Text section takes 5 parts of the space */
+
+}
+
+.hero-section .text h2 {
+  font-size: 45px; /* Larger font size for title */
+}
+
+.hero-section .text h1 {
+  font-size: 20px; /* Larger font size for title */
+  margin-bottom: 15px; /* Adjust this value to control the space */
+}
+
+.hero-section .text .links {
+  margin-top: 25px;
+}
+
+.hero-section .text .links a {
+  display: inline-block; /* Inline block for links */
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: .1s;
+}
+
+.hero-section .text .links a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+/* Headshot section in the hero: image */
+.hero-section .headshot {
+  flex: 2; /* Image section takes 2 parts of the space */
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section .headshot img {
+  width: 350px;
+  border-radius: 50%; /* Circular image */
+}
+
+
+/* SECTION 2: About me */
+.more-section {
+  display: flex;
+  align-items: flex-start; /* Align content to the left */
+  height: calc(100vh - 80px);
+  padding: 0 50px;
+}
+
+
+.more-section .text h2 {
+  font-size: 45px; /* Larger font size for title */
+  margin-bottom: 20px; /* Adjust this value to control the space */
+  }
+
+.more-section .text {
+  font-size: 20; /* Larger font size for title */
+}
+
+.more-section .text p {
+  margin-bottom: 20px; /* Adjust this value to control the space */
+}
+/* a selects for links */
+.more-section a:hover {
+  color: var(--text-color);
+}
+
+/* SECTION 3: Skills */
+.skills-section {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align content to the left */
+  height: calc(100vh - 80px);
+  margin-top: 200px;
+}
+
+.skills-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: left; /* Ensure text aligns left */
+}
+.skills-section h3 {
+  font-size: 20;
+  color: var(--subtitle-color);
+  margin-bottom: 5px;
+  text-align: left; /* Ensure text aligns left */
+}
+
+.skills-container {
+  display: grid;
+  text-align: left;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 0px 30px; /* Increased vertical space (50px) between boxes */
+  max-width: 1400px; /* Match the width of the rest of the page */
+  margin: 0 auto; /* Center the section */
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Section 4: Publications */
+.publications-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 50px; 
+  margin-top: 200px; /* Space after the previous section */
+  width: 100%;
+}
+
+
+.faq-container {
+  overflow: hidden;
+}
+
+
+.faq-question {
+  background: #f9f9f9;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background: #fff;
+}
+.faq-item:target .faq-answer {
+  display: block;
+}
+
+/* Section 4.1: thesis promo*/
+.thesis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.thesis-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.thesis-image img {
+  width: 200px; /* Set the width of the image */
+  height: auto;
+  margin-right: 20px; /* Space between the image and text */
+}
+
+.thesis-text {
+  max-width: 600px; /* Limit the width of the text */
+}
+
+.thesis-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.thesis-text p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.thesis-text a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.thesis-text a:hover {
+  text-decoration: underline;
+}
+
+
+/* Section 5: footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 200px; /* Space between content and footer */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer nav {
+  display: flex;
+  gap: 15px;
+}
+
+.footer a {
+  color:#1a1c20;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #267475; /* Highlight color on hover */
+}
+
+
+
+/* Ensuring the layout is responsive */
+@media (max-width: 850px) {
+  /* SECTION 1: Hero */
+  .hero-section {
+    margin-top: 90px; /* Adjust as needed depending on navbar height */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content */
+  }
+
+  .more-section {
+    flex-direction: column; /* Stack text vertically on smaller screens */
+    align-items: center; /* Center text content */
+    padding: 0 20px; /* Add some padding on the sides for mobile */
+    max-width: 100%; /* Ensure the content doesn't stretch beyond the screen */
+    box-sizing: border-box; /* Prevent overflow from padding */
+  }
+
+  .more-section .text {
+    text-align: center; /* Center-align text for better readability on small screens */
+    max-width: 100%; /* Ensure the text doesn't overflow */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+
+  .more-section .text h2 {
+    font-size: 36px; /* Adjust font size on smaller screens */
+  }
+
+  .more-section .text p {
+    font-size: 18px; /* Adjust font size of paragraph */
+  }
+
+  /* SECTION 3: Skills */
+  .skills-container {
+    display: flex;
+    flex-direction: column; /* Stack the skills items vertically */
+    gap: 20px; /* Add spacing between items */
+    align-items: center;
+  }
+
+  .skills-item {
+    width: 100%; /* Ensure items take the full width of the container */
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center the content */
+  }
+
+  .icon img {
+    width: 60px; /* Reduce the icon size on smaller screens */
+    height: 60px;
+  }
+
+  .skills-item h3 {
+    font-size: 22px; /* Adjust title font size */
+  }
+
+  .skills-item p {
+    font-size: 16px; /* Adjust text font size for readability */
+    text-align: center; /* Center the text */
+  }
+
+  /* SECTION 4: Publications */
+  .publications-section {
+    padding: 40px 20px; /* Add more padding on top and sides to separate sections */
+    margin-bottom: 1500px; /* Ensure space below the publications section */
+  }
+
+  .publications-section h2 {
+    font-size: 36px; /* Adjust font size */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add some space under the heading */
+  }
+
+  .publications-section .publication-item {
+    width: 100%; /* Make each publication item take full width */
+    margin-bottom: 15px; /* Add space between publication items */
+    text-align: center; /* Center the content */
+  }
+
+  .publication-item h3 {
+    font-size: 20px; /* Adjust heading font size */
+  }
+
+  .publication-item p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+
+  /* SECTION 4.1: Thesis Promo */
+/* SECTION 4.1: Thesis Promo - Mobile View */
+@media (max-width: 850px) {
+  .thesis {
+    flex-direction: column; /* Stack image and text */
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Keep the publication-text visible but hide only the paragraph */
+  .publication-text {
+    display: block; /* Ensure the container stays visible */
+    text-align: center; /* Center-align text */
+  }
+
+  /* Hide only the paragraph text */
+  .publication-text p {
+    display: none; /* Hide the paragraph text */
+  }
+
+  /* Keep the title and link visible */
+  .publication-text h3 {
+    display: none;
+  }
+
+  .publication-text a {
+    display: inline-block; /* Ensure the link stays visible */
+    margin-top: 10px; /* Space between title and link */
+    color: var(--link-color); /* Link color */
+    font-weight: bold; /* Make link bold */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* Optional: Add hover effect for the link */
+  .publication-text a:hover {
+    text-decoration: underline;
+  }
+
+  /* Make image responsive */
+  .thesis-image img {
+    width: 100%;
+    max-width: 300px; /* Control the image size */
+  }
+
+  /* Optional: Margin between image and text */
+  .thesis-image {
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+
+  /* SECTION 5: Footer */
+  .footer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center the footer content */
+    justify-content: center; /* Center the content vertically */
+    margin-bottom: 50px;
+
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically in footer */
+    align-items: center; /* Center content */
+    gap: 10px; /* Add space between elements */
+  }
+
+  .footer nav {
+    display: flex;
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: center; /* Center nav items */
+    gap: 10px; /* Add space between nav links */
+  }
+
+  .footer a {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 740px) {
+  /* SECTION 1: Hero */
+  .hero-section {
+    margin-top: 90px; /* Adjust as needed depending on navbar height */
+    flex-direction: column-reverse; /* Stack hero section content vertically */
+    align-items: center; /* Center content */
+  }
+
+  .hero-section .headshot img {
+    width: 300px;
+  }
+
+  /* SECTION 3: About me */
+  .more-section {
+    text-align: center;
+    margin-top: 70px;
+    padding: 0 40px; /* Add padding for better spacing */
+    max-width: 100%; /* Ensure content doesn't overflow */
+    box-sizing: border-box;
+  }
+
+}
+
+@media (max-width: 600px) {
+  /* NAVBAR */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  /* SECTION 1: Hero */
+  .hero-section {
+    padding: 0 40px;
+    margin-top: 250px; /* Adjust as needed depending on navbar height */
+    text-align: center;
+    max-width: 100%; /* Ensure content doesn't overflow */
+    box-sizing: border-box;
+  }
+
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+
+  /* SECTION 3: About me */
+  .more-section {
+    padding: 0 40px;
+    max-width: 100%; /* Ensure content doesn't overflow */
+    box-sizing: border-box;
+  }
+
+  .more-section .text h2 {
+    font-size: 30px; /* Smaller title size for smaller screens */
+  }
+
+  .more-section .text p {
+    font-size: 16px; /* Smaller text for paragraphs */
+  }
+
+}
