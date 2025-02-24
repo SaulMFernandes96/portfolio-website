@@ -194,12 +194,12 @@ nav .right a span {
 }
 
 
-.faq-container {
+.pub-container {
   overflow: hidden;
 }
 
 
-.faq-question {
+.pub-question {
   background: #f9f9f9;
   padding: 15px;
   cursor: pointer;
@@ -209,12 +209,12 @@ nav .right a span {
   align-items: center;
 }
 
-.faq-answer {
+.pub-answer {
   display: none;
   padding: 15px;
   background: #fff;
 }
-.faq-item:target .faq-answer {
+.pub-item:target .pub-answer {
   display: block;
 }
 
@@ -328,7 +328,7 @@ nav .right a span {
   /* SECTION 3: Skills */
 
   .skills-section{
-    margin-bottom: 1900px;
+    margin-bottom: 2000px;
   }
   
   .skills-container {
