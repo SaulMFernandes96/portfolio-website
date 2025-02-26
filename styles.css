@@ -188,7 +188,7 @@ nav .right a span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 50px; 
+  padding: 0 40px; 
   margin-top: 200px; /* Space after the previous section */
   width: 100%;
 }
@@ -422,7 +422,7 @@ nav .right a span {
     flex-direction: column; /* Stack items vertically on smaller screens */
     align-items: center; /* Center the footer content */
     justify-content: center; /* Center the content vertically */
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 
   }
 
