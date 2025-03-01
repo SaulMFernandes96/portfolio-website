@@ -292,6 +292,79 @@ nav .right a span {
   color: #267475; /* Highlight color on hover */
 }
 
+/* CONTACT FORM STYLING */
+.contact-section {
+  max-width: 800px;
+  margin: 100px auto; /* Centering the form */
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+  font-size: 32px;
+  color: var(--subtitle-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section label {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  background: #fff;
+  color: var(--text-color);
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: var(--text-color);
+  outline: none;
+}
+
+.contact-section textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* reCAPTCHA styling */
+.contact-section .g-recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Submit Button */
+.contact-section button {
+  background: var(--link-color);
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-section button:hover {
+  background: var(--text-color);
+}
+
 
 
 /* Ensuring the layout is responsive */
@@ -514,6 +587,29 @@ nav .right a span {
     font-size: 16px; /* Smaller text for paragraphs */
   }
 
-
+  @media (max-width: 600px) {
+    .contact-section {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .contact-section h1 {
+      font-size: 28px;
+    }
+  
+    .contact-section label {
+      font-size: 16px;
+    }
+  
+    .contact-section input,
+    .contact-section textarea {
+      font-size: 14px;
+    }
+  
+    .contact-section button {
+      font-size: 16px;
+    }
+  }
+  
 }
 }
