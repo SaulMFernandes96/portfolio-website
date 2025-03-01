@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.saulfernandes.com/styles.css" media="screen">
 </head>
 <body>
 
     <div class="contact-section">
 
         <h1>Contact Me</h1>
-        <form id="contactForm" action="https://saulfernandes.com/send_email.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-    
-            <!-- Google reCAPTCHA -->
-            <div class="g-recaptcha" data-sitekey="6LfJ3OUqAAAAAJogM7xIX5Caa9aJJ4D_LEVryNZc"></div>
-    
-            <button type="submit">Send Message</button>
-        </form>
+        <form action="https://send.pageclip.co/CJnkbqrdoATY6FGJ4srTozN3TVVOpC7x/contact-form" class="pageclip-form" method="post">
+            <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+          
+            <!-- It looks like you are creating a contact form. These email and subject fields are special -->
+            <!-- See https://pageclip.co/docs#special-fields for more info -->
+            <input type="name" name="name" value="Your name" />
+            <input type="email" name="email" value="roscoe@example.com" />
+            <input type="text" name="subject" value="Message" />
+          
+            <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+            <button type="submit" class="pageclip-form__submit">
+              <span>Send</span>
+            </button>
+          </form>
     </div>
     
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
 </body>
 </html>
